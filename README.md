@@ -1,5 +1,5 @@
 # Test automation framework for [Demo Web Store](http://happyharbor.com) application
-![logo.png](src/readme_page_media/logo/logo.png)
+![logo.png](src/readme_page_media/logo/Logo.png)
 
 ## Overview
 

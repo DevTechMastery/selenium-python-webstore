@@ -12,3 +12,4 @@ class CartPagesLocators:
     APPLY_COUPON_BUTTON = (By.CSS_SELECTOR,'button.wc-block-components-totals-coupon__button')
 
     COUPON_APPLIED_BANNER = (By.CLASS_NAME, 'wc-block-components-notice-banner__content')
+

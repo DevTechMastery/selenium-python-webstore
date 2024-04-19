@@ -34,11 +34,7 @@ class TestEndToEndCheckoutGuestUser:
         # Apply free coupon
         coupon_code = GenericConfigs.FREE_COUPON
         cart_p.apply_coupon(coupon_code)
-
-
-        #import pdb;
-        #pdb.set_trace()
-
+        
         # Click on checkout
         # Select free shipping
         # Fill in form

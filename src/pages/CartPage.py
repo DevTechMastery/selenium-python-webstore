@@ -54,3 +54,5 @@ class CartPage(CartPagesLocators):
         return self.sl.wait_and_get_text(self.COUPON_APPLIED_BANNER)
 
 
+
+

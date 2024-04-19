@@ -34,12 +34,16 @@ class TestEndToEndCheckoutGuestUser:
         # Apply free coupon
         coupon_code = GenericConfigs.FREE_COUPON
         cart_p.apply_coupon(coupon_code)
-        
+
         # Click on checkout
-        # Select free shipping
+        cart_p.click_proceed_to_checkout_button()
+
+        # TBD- Complete the end-to-end test
         # Fill in form
         # Click on place order
         # Verify order is received
         # Verify order is recorded in db (vi SQL or via API)
-        # These steps are yet to be implemented
 
+
+        import pdb;
+        pdb.set_trace()

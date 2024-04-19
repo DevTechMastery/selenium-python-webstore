@@ -13,3 +13,5 @@ class CartPagesLocators:
 
     COUPON_APPLIED_BANNER = (By.CLASS_NAME, 'wc-block-components-notice-banner__content')
 
+    PROCEED_TO_CHECKOUT_BUTTON = (By.CSS_SELECTOR, 'a.components-button')
+

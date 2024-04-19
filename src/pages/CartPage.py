@@ -53,6 +53,12 @@ class CartPage(CartPagesLocators):
     def get_displayed_coupon_message(self):
         return self.sl.wait_and_get_text(self.COUPON_APPLIED_BANNER)
 
+    # Method to click the proceed to checkout button
+    def click_proceed_to_checkout_button(self):
+        self.sl.wait_and_click(self.PROCEED_TO_CHECKOUT_BUTTON)
+
+
+
 
 
 

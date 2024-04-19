@@ -2,6 +2,7 @@ import pytest
 from myStoreWebUI.src.pages.HomePage import HomePage
 from myStoreWebUI.src.pages.Header import Header
 from myStoreWebUI.src.pages.CartPage import CartPage
+from myStoreWebUI.src.pages.CheckoutPage import CheckoutPage
 from myStoreWebUI.src.configs.generic_configs import GenericConfigs
 
 
@@ -14,6 +15,7 @@ class TestEndToEndCheckoutGuestUser:
         home_p = HomePage(self.driver)
         header = Header(self.driver)
         cart_p = CartPage(self.driver)
+        checkout_p = CheckoutPage(self.driver)
 
         # Navigate to home page
         home_p.go_to_home_page()
@@ -38,9 +40,11 @@ class TestEndToEndCheckoutGuestUser:
         # Click on checkout
         cart_p.click_proceed_to_checkout_button()
 
-        # TBD- Complete the end-to-end test
         # Fill in form
-        # Click on place order
+        checkout_p.fill_in_billing_details()
+        checkout_p.click_place_order_button()
+
+        # TBD- Complete the end-to-end test
         # Verify order is received
         # Verify order is recorded in db (vi SQL or via API)
 

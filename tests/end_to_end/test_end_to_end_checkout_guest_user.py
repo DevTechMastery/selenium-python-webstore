@@ -3,8 +3,10 @@ from myStoreWebUI.src.pages.HomePage import HomePage
 from myStoreWebUI.src.pages.Header import Header
 from myStoreWebUI.src.pages.CartPage import CartPage
 from myStoreWebUI.src.pages.CheckoutPage import CheckoutPage
+from myStoreWebUI.src.pages.OrderReceivedPage import OrderReceivedPage
 from myStoreWebUI.src.configs.generic_configs import GenericConfigs
 
+import time
 
 @pytest.mark.usefixtures('init_driver')
 class TestEndToEndCheckoutGuestUser:
@@ -16,6 +18,7 @@ class TestEndToEndCheckoutGuestUser:
         header = Header(self.driver)
         cart_p = CartPage(self.driver)
         checkout_p = CheckoutPage(self.driver)
+        order_received_p = OrderReceivedPage(self.driver)
 
         # Navigate to home page
         home_p.go_to_home_page()
@@ -42,12 +45,15 @@ class TestEndToEndCheckoutGuestUser:
 
         # Fill in form
         checkout_p.fill_in_billing_details()
+
+        # note: the following sleep is added to help with debugging as the page transitions are too fast and issue to click place order button
+        time.sleep(5)
+
+        # Click on place order button
         checkout_p.click_place_order_button()
 
-        # TBD- Complete the end-to-end test
         # Verify order is received
-        # Verify order is recorded in db (vi SQL or via API)
+        order_received_p.verify_order_received_page_loaded()
 
-
-        import pdb;
-        pdb.set_trace()
+        #import pdb;
+        #pdb.set_trace()

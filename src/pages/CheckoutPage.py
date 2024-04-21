@@ -11,7 +11,6 @@ class CheckoutPage(CheckoutPageLocators):
     def input_billing_first_name(self,first_name="TestFirstName"):
         self.sl.wait_and_input_text(self.BILLING_FIRST_NAME_FIELD, first_name)
 
-
     def input_billing_last_name(self,last_name="TestLastName"):
         self.sl.wait_and_input_text(self.BILLING_LAST_NAME_FIELD, last_name)
 
@@ -36,9 +35,9 @@ class CheckoutPage(CheckoutPageLocators):
         self.sl.wait_and_input_text(self.BILLING_EMAIL_FIELD, email)
 
     # hard coded values for now, can be parameterized, but for now, we will keep it simple
-    def fill_in_billing_details(self, first_name="TestFirstName", last_name="TestLastName", address="TestAddress",
-                                apartment="TestApartment", city="TestCity", zip="12345", phone="1234567890",
-                                email=None):
+    def fill_in_billing_details(self, email=None, first_name="TestFirstName", last_name="TestLastName", address="TestAddress",
+                                apartment="TestApartment", city="TestCity", zip="12345", phone="1234567890"):
+        self.input_billing_email(email)
         self.input_billing_first_name(first_name if first_name is not None else "TestFirstName")
         self.input_billing_last_name(last_name if last_name is not None else "TestLastName")
         self.input_billing_address(address if address is not None else "TestAddress")
@@ -46,7 +45,6 @@ class CheckoutPage(CheckoutPageLocators):
         self.input_billing_city(city if city is not None else "TestCity")
         self.input_billing_zip(zip if zip is not None else "12345")
         self.input_billing_phone(phone if phone is not None else "1234567890")
-        self.input_billing_email(email)
 
     def click_place_order_button(self):
         self.sl.wait_and_click(self.PLACE_ORDER_BUTTON)

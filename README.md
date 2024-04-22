@@ -54,24 +54,26 @@ There are several tools are used:
 
 ## UI Tests
 
-:heavy_check_mark: tcid1 @ Login @ Register a new user
+:ballot_box_with_check: tcid1 @ Login @ Register a new user @ Description: Register a new user with valid credentials and verify that the user is successfully registered.
 
-:heavy_check_mark: tcid2 @ Login @ Login with existing user
+:o: tcid2 @ Login @ Login with existing user @ Description: Login with an existing user and verify that the user is successfully logged in.
 
-:heavy_check_mark: tcid3 @ Login @ Login with non-existing user
+:ballot_box_with_check: tcid3 @ Login @ Login with non-existing user @ Description: Login with a non-existing user and verify that the login fails with the correct error message.
 
-:heavy_check_mark: tcid4 @ Cart @ Remove product from cart
+:o: tcid4 @ Cart @ Remove product from cart @ Description: Add a product to the cart, then remove it, and verify that the cart is empty or updated correctly.
 
-:heavy_check_mark: tcid4 @ Cart @ TBD
+:o: tcid5 @ Cart @ Update product quantity in cart @ Description: Increase and decrease the quantity of an existing product in the cart and verify if the cart updates with the correct total price and quantity.
 
-:heavy_check_mark: tcid15 @ End to end @ Guest user completes the checkout process with the application of a discount coupon
+:o: tcid6 @ Cart @ TBD
 
-:heavy_check_mark: tcid16 @ End to end @ TBD  
+:ballot_box_with_check: tcid15 @ End to end @ Order process with the application of a discount coupon as guest user @ Description: Add a product to the cart, apply a discount coupon, and complete the order as a guest user.
+
+:o: tcid16 @ End to end @ TBD  
 
 ## API Tests
-:heavy_check_mark: tcid20 @ Add product to cart with API
+:o: tcid20 @ API @ Add product to cart with API
 
-:heavy_check_mark: tcid21 @ TBD   
+:o: tcid21 @ API @TBD   
 
 
 ## Launch the tests

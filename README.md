@@ -1,8 +1,25 @@
 # Test automation framework for [Demo Web Store](http://happyharbor.com) application
+
+
+
+
+
+
+
 ![logo.png](src/readme_page_media/logo/Logo.png)
 
-## Overview
 
+## Technology Stack
+
+| <a href="https://www.python.org/"><img src="src/readme_page_media/logo/Python.png" width="40" height="40"  alt="Python"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="src/readme_page_media/logo/Pytest.png" width="40" height="40"  alt="Pytest"/></a> | <a href="https://www.selenium.dev/"><img src="src/readme_page_media/logo/Selenium.png" width="40" height="40"  alt="selenium"/></a> | <a href="https://www.jenkins.io/"><img src="src/readme_page_media/logo/Jenkins.png" width="40" height="40"  alt="jenkins"/></a> | <a href="https://github.com/"><img src="src/readme_page_media/logo/GitHub.png" width="40" height="40"  alt="GitHub"/></a> |
+|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: | :---------: |:----------------------------------------------------------------------------------------------------------------------------------:|
+|                                                            Python                                                             |                                       Pytest                                                                                                       | Selenium | Jenkins |                                                              GitHub                                                               |
+
+| <a href="https://www.atlassian.com/software/jira"><img src="src/readme_page_media/logo/Jira.png" width="40" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="src/readme_page_media/logo/Allure.png" width="40" height="40"  alt="Allure"/></a> |<a href="https://docs.qameta.io/allure-testops//"><img src="src/readme_page_media/logo/AllureTO.png" width="40" height="40"  alt="AllureTestOps"/></a> | <a href="https://slack.com/"><img src="src/readme_page_media/logo/Slack.png" width="40" height="40"  alt="Slack"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="src/readme_page_media/logo/PyCharm.png" width="40" height="40"  alt="PyCharm"/></a> |
+| :---------: | :---------: | :---------: | :---------: | :---------: |
+| Jira | Allure | Allure TO | Slack | PyCharm |
+
+## Overview
 The myStoreWebUI project is a [Python-based](https://www.python.org/) web automation framework designed to interact with an online store's user interface.   
 It uses Selenium WebDriver for browser automation and pytest for test organization and execution.  
 
@@ -18,15 +35,7 @@ Continuous integration is an essential part of the project, with Jenkins used to
 Notifications are sent to the team via Slack, and test results are visualized using Allure reports and Allure TestOps.
 
 
-## Technology Stack
 
-| <a href="https://www.python.org/"><img src="src/readme_page_media/logo/Python.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="src/readme_page_media/logo/PyCharm.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://github.com/"><img src="src/readme_page_media/logo/GitHub.png" width="40" height="40"  alt="GitHub"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="src/readme_page_media/logo/Pytest.png" width="40" height="40"  alt="Pytest"/></a> | <a href="https://www.selenium.dev/"><img src="src/readme_page_media/logo/Selenium.png" width="40" height="40"  alt="selenium"/></a>  | <a href="https://www.jenkins.io/"><img src="src/readme_page_media/logo/Jenkins.png" width="40" height="40"  alt="jenkins"/></a> |
-|:-----------------------------------------------------------------------------------------------------------------------------:| :---------: | :---------: | :---------: | :---------: | :---------: |
-|                                                            Python                                                             | PyCharm | GitHub | Pytest | Selenium | Jenkins |
-
-| <a href="https://www.atlassian.com/software/jira"><img src="src/readme_page_media/logo/Jira.png" width="40" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="src/readme_page_media/logo/Allure.png" width="40" height="40"  alt="Allure"/></a> |<a href="https://docs.qameta.io/allure-testops//"><img src="src/readme_page_media/logo/AllureTO.png" width="40" height="40"  alt="AllureTestOps"/></a> | <a href="https://slack.com/"><img src="src/readme_page_media/logo/Slack.png" width="40" height="40"  alt="Slack"/></a> | <a href="https://www.jetbrains.com/idea/"><img src="TBD" width="40" height="40"  alt="TBD"/></a> |<a href="https://www.jetbrains.com/idea/"><img src="TBD" width="40" height="40"  alt="TBD"/></a> |
-| :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
-| Jira | Allure | Allure TO | Slack | TBD | TBD |
 
 
 The `myStoreWebUI` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
@@ -45,18 +54,24 @@ There are several tools are used:
 
 ## UI Tests
 
-:heavy_check_mark: UI Register a new user
+:heavy_check_mark: tcid1 @ Login @ Register a new user
 
-:heavy_check_mark: UI Login test with incorrect credentials
+:heavy_check_mark: tcid2 @ Login @ Login with existing user
 
-:heavy_check_mark: Validate authorized users can add a product to cart
+:heavy_check_mark: tcid3 @ Login @ Login with non-existing user
 
-:heavy_check_mark: TBD    
+:heavy_check_mark: tcid4 @ Cart @ Remove product from cart
+
+:heavy_check_mark: tcid4 @ Cart @ TBD
+
+:heavy_check_mark: tcid15 @ End to end @ Guest user completes the checkout process with the application of a discount coupon
+
+:heavy_check_mark: tcid16 @ End to end @ TBD  
 
 ## API Tests
-:heavy_check_mark: Add product to cart with API
+:heavy_check_mark: tcid20 @ Add product to cart with API
 
-:heavy_check_mark: TBD   
+:heavy_check_mark: tcid21 @ TBD   
 
 
 ## Launch the tests
@@ -64,7 +79,15 @@ There are several tools are used:
 ### To run the tests locally (default):
 
 ```
-pytest -m tcid
+pytest -m tcid1
+
+pytest -m end_to_end
+
+pytest -m smoke
+
+pytest -m regression --alluredir=allure-results
+
+pytest -m api --alluredir=allure-results
 ```
 
 ### Video sample with passing test case:

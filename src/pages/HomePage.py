@@ -16,3 +16,13 @@ class HomePage(HomePageLocators):
     # Method to click the first product on the home page to add to cart
     def click_first_add_to_cart_button(self):
         self.sl.wait_and_click(self.ADD_TO_CART_BTN)
+
+    # Method to search for an item
+    def search_item(self, item):
+        self.sl.wait_and_input_text(self.SEARCH_FIELD, item)
+        self.sl.wait_and_enter(self.SEARCH_FIELD)
+
+    def get_search_result(self, result,):
+        self.sl.wait_until_element_contains_text(self.SEARCH_RESULT, result)
+
+

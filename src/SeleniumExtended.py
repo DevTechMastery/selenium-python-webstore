@@ -2,6 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.keys import Keys
 
 import time
 
@@ -32,6 +33,19 @@ class SeleniumExtended:
             WebDriverWait(self.driver, timeout).until(
                 EC.visibility_of_element_located(locator)
             ).click()
+
+    # Method to wait for an element and then press the 'Enter' key
+    def wait_and_enter(self, locator, timeout=None):
+        timeout = timeout if timeout else self.default_timeout
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                EC.element_to_be_clickable(locator)
+            ).send_keys(Keys.RETURN)
+        except StaleElementReferenceException:
+            time.sleep(2)
+            WebDriverWait(self.driver, timeout).until(
+                EC.visibility_of_element_located(locator)
+            ).send_keys(Keys.RETURN)
 
     # Method to wait until an element contains a specific text
     def wait_until_element_contains_text(self, locator, text, timeout=None):

@@ -55,35 +55,35 @@ There are several tools are used:
 ## UI Tests
 
 :heavy_check_mark: tcid1 @ Login @ Register a new user \
-@ Objective: Register a new user and verify that the user is successfully registered. 
+Objective: Register a new user and verify that the user is successfully registered. 
 
 :heavy_check_mark: tcid2 @ Login @ Login with existing user \
-@ Objective: Login with an existing user and verify that the user is successfully logged in.
+Objective: Login with an existing user and verify that the user is successfully logged in.
 
 :heavy_check_mark: tcid3 @ Login @ Login with non-existing user \
-@ Objective: Login with a non-existing user and verify that the login fails with the correct error message.
+Objective: Login with a non-existing user and verify that the login fails with the correct error message.
 
 :heavy_check_mark: tcid4 @ Cart @ Remove product from cart \
-@ Objective: Add a product to the cart, then remove it, and verify that the cart is empty or updated correctly.
+Objective: Add a product to the cart, then remove it, and verify that the cart is empty or updated correctly.
 
 :heavy_check_mark: tcid5 @ Cart @ Update product quantity in cart \
-@ Objective: Increase and decrease the quantity of an existing product in the cart and verify if the cart updates with the correct total price and quantity.
+Objective: Increase and decrease the quantity of an existing product in the cart and verify if the cart updates with the correct total price and quantity.
 
 :heavy_check_mark: tcid6 @ Cart @ TBD \
-@ Objective: TBD
+Objective: TBD
 
 :heavy_check_mark: tcid15 @ End to end @ Order process with the application of a discount coupon as guest user \
-@ Objective: Add a product to the cart, apply a discount coupon, and complete the order as a guest user.
+Objective: Add a product to the cart, apply a discount coupon, and complete the order as a guest user.
 
 :heavy_check_mark: tcid16 @ End to end @ TBD  \
-@ Objective: TBD
+Objective: TBD
 
 ## API Tests
 :heavy_check_mark: tcid20 @ API @ Add product to cart with API \
-@ Objective: Add a product to the cart using the API and verify that the product is added successfully.
+Objective: Add a product to the cart using the API and verify that the product is added successfully.
 
 :heavy_check_mark: tcid21 @ API @TBD \  
-@ Objective: TBD
+Objective: TBD
 
 ## Launch the tests
 

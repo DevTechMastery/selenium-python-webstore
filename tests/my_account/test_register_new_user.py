@@ -8,6 +8,8 @@ from myStoreWebUI.src.helpers.generic_helpers import generate_random_email_and_p
 class TestRegisterNewUser:
     # Test case for registering a new user
     @pytest.mark.tcid1
+    @pytest.mark.smoke
+    @pytest.mark.regression
     def test_register_valid_new_user(self):
         # Create instances of AccountSignedOut and AccountSignedIn
         my_account_o = AccountSignedOut(self.driver)

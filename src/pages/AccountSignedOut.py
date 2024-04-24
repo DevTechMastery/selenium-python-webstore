@@ -1,10 +1,10 @@
-from myStoreWebUI.src.pages.locators.AccountSignedOutLocators import AccountSignedOutLocator
+from myStoreWebUI.src.pages.locators.AccountSignedOutLocators import AccountSignedOutLocators
 from myStoreWebUI.src.SeleniumExtended import SeleniumExtended
 from myStoreWebUI.src.helpers.config_helpers import get_base_url
 import logging as logger
 
 
-class AccountSignedOut(AccountSignedOutLocator):
+class AccountSignedOut(AccountSignedOutLocators):
     # end of web page account
     endpoint = '/my-account/'
 

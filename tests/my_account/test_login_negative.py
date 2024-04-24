@@ -7,6 +7,7 @@ class TestLoginNegative:
     # Test case for login with non-existing user
     @pytest.mark.tcid2
     @pytest.mark.smoke
+    @pytest.mark.regression
     def test_login_none_existing_user(self):
         print("*******")
         print("TEST LOGIN NON EXISTING")

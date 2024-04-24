@@ -26,6 +26,7 @@ def init_driver(request):
     elif browser in ('firefox', 'ff'):
         driver = webdriver.Firefox()
 
+
     # Assign the WebDriver instance to the 'driver' attribute of the test class
     request.cls.driver = driver
     # Yield control back to the test function. After the test function finishes,

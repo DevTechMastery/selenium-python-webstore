@@ -63,13 +63,16 @@ Objective: Login with an existing user and verify that the user is successfully 
 :heavy_check_mark: tcid3 @ Login @ Login with non-existing user \
 Objective: Login with a non-existing user and verify that the login fails with the correct error message.
 
-:heavy_check_mark: tcid4 @ Cart @ Remove product from cart \
+:heavy_check_mark: tcid4 @ Search @ Search for a product \
+Objective: Search for a product using the search bar and verify that the search results are displayed correctly.
+
+:heavy_check_mark: tcid5 @ Cart @ Remove product from cart \
 Objective: Add a product to the cart, then remove it, and verify that the cart is empty or updated correctly.
 
-:heavy_check_mark: tcid5 @ Cart @ Update product quantity in cart \
+:heavy_check_mark: tcid6 @ Cart @ Update product quantity in cart \
 Objective: Increase and decrease the quantity of an existing product in the cart and verify if the cart updates with the correct total price and quantity.
 
-:heavy_check_mark: tcid6 @ Cart @ TBD \
+:heavy_check_mark: tcid7 @ Cart @ TBD \
 Objective: TBD
 
 :heavy_check_mark: tcid15 @ End to end @ Order process with the application of a discount coupon as guest user \

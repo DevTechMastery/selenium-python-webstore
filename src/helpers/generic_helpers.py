@@ -1,8 +1,38 @@
-
+from faker import Faker
 import random
 import string
 import logging as logger
 from html.parser import HTMLParser
+
+class DataGenerator:
+    # Constructor for the DataGenerator class
+    def __init__(self):
+        self.fake = Faker(['en-US'])
+
+    def generate_first_name(self):
+        return self.fake.first_name()
+
+    def generate_last_name(self):
+        return self.fake.last_name()
+
+    def generate_address(self):
+        building_number = self.fake.building_number()
+        street_name = self.fake.street_name()
+        return building_number + " " + street_name
+
+    def generate_apartment(self):
+        return self.fake.secondary_address()
+
+    def generate_city(self):
+        return self.fake.city()
+
+    def generate_zipcode(self):
+        return self.fake.zipcode()
+
+    def generate_phone(self): # # Generates a 10-digit phone number starting with a digit between 1 and 9
+        first_digit = str(self.fake.random_int(min=1, max=9))
+        remaining_digits = self.fake.numerify(text="#########")
+        return first_digit + remaining_digits
 
 
 # Function to generate a random email and password

@@ -54,41 +54,53 @@ There are several tools are used:
 
 ## UI Tests
 
-:heavy_check_mark: tcid1 @ Login @ Register a new user \
+:scroll: tcid1 @ Login @ Register a new user \
 Objective: Register a new user and verify that the user is successfully registered. 
 
-:heavy_check_mark: tcid2 @ Login @ Login with existing user \
+:scroll: tcid2 @ Login @ Login with existing user \
 Objective: Login with an existing user and verify that the user is successfully logged in.
 
-:heavy_check_mark: tcid3 @ Login @ Login with non-existing user \
+:scroll: tcid3 @ Login @ Login with non-existing user \
 Objective: Login with a non-existing user and verify that the login fails with the correct error message.
 
-:heavy_check_mark: tcid4 @ Search @ Search for a product \
+:scroll: tcid4 @ Search @ Search for a product \
 Objective: Search for a product using the search bar and verify that the search results are displayed correctly.
 
-:heavy_check_mark: tcid5 @ Cart @ Remove product from cart \
-Objective: Add a product to the cart, then remove it, and verify that the cart is empty or updated correctly.
+:scroll: tcid5 @ Cart @ Remove product from cart \
+Objective: Add a product to the cart, then remove it, and verify that the cart is empty.
 
-:heavy_check_mark: tcid6 @ Cart @ Update product quantity in cart \
+:scroll: tcid6 @ Cart @ Update product quantity in cart \
 Objective: Increase and decrease the quantity of an existing product in the cart and verify if the cart updates with the correct total price and quantity.
 
-:heavy_check_mark: tcid7 @ Cart @ TBD \
+:scroll: tcid7 @ Cart @ TBD \
 Objective: TBD
 
-:heavy_check_mark: tcid15 @ End to end @ Order process with the application of a discount coupon as guest user \
+:scroll: tcid15 @ End to end @ Order process with the application of a discount coupon as guest user \
 Objective: Add a product to the cart, apply a discount coupon, and complete the order as a guest user.
 
-:heavy_check_mark: tcid16 @ End to end @ TBD  \
+:scroll: tcid16 @ End to end @ TBD  \
 Objective: TBD
 
 ## API Tests
-:heavy_check_mark: tcid20 @ API @ Add product to cart with API \
+:large_blue_diamond: tcid20 @ API @ Add product to cart with API \
 Objective: Add a product to the cart using the API and verify that the product is added successfully.
 
-:heavy_check_mark: tcid21 @ API @TBD \  
+:large_blue_diamond: tcid21 @ API @TBD \  
 Objective: TBD
 
-## Launch the tests
+
+## Getting Started
+
+
+To get started with MyStoreWebUI, follow these steps:
+
+1. Ensure you have Python installed on your machine.
+2. Install the project's dependencies listed in the `requirements.txt` file using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ### To run the tests locally (default):
 
@@ -104,8 +116,8 @@ pytest -m regression --alluredir=allure-results
 pytest -m api --alluredir=allure-results
 ```
 
-### Video sample with passing test case:
-![Selenium](./images/register.gif)
+### Demonstration of a Successful End-to-End Test Case Execution:
+![Selenium](src/readme_page_media/video/test_e2e.gif)
 
 ### Jenkins job: Possible launch configurations
 ![Jenkins](./images/jenkins.png)

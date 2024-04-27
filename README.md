@@ -52,7 +52,9 @@ There are several tools are used:
 * [Slack](https://slack.com/) is a custom chanel using to notify about the test result
 * [TBD](https://slack.com/) TBD...............................
 
-## UI Tests
+
+<details>
+  <summary><b>:scroll: UI Tests  👉   Click to expand</b>  👈</summary>
 
 :scroll: tcid1 @ Login @ Register a new user \
 Objective: Register a new user and verify that the user is successfully registered. 
@@ -81,12 +83,19 @@ Objective: Add a product to the cart, apply a discount coupon, and complete the 
 :scroll: tcid16 @ End to end @ TBD  \
 Objective: TBD
 
-## API Tests
+</details>
+
+
+<details>
+  <summary><b> :large_blue_diamond: API Tests  👉 Click to expand</b>  👈</summary>
+
 :large_blue_diamond: tcid20 @ API @ Add product to cart with API \
 Objective: Add a product to the cart using the API and verify that the product is added successfully.
 
 :large_blue_diamond: tcid21 @ API @TBD \  
 Objective: TBD
+
+</details>
 
 
 ## Getting Started

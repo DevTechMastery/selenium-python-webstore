@@ -131,9 +131,24 @@ pytest -m api --alluredir=allure-results
 ### Jenkins job: Possible launch configurations
 ![Jenkins](./images/jenkins.png)
 
+
+### Generating Allure Reports
+Allure reports provide a nice visual way to see the results of your tests. Here's how you can generate and view Allure reports:
+
+1. **Run your tests with Allure**: When running your pytest tests, include the `--alluredir` option followed by the directory where you want the Allure results to be stored. For example:
+```bash
+# This command will run the regression tests and store the Allure results in the allure-results directory.
+pytest -m regression --alluredir=allure-results
+```
+2. **Generate the Allure report:**:  After your tests have run, you can generate the Allure report using the Allure command line tool:
+```bash
+# This command will generate the Allure report and immediately open it in your default web browser.
+allure serve allure-results
+```
+
 ### Allure report: Test status and trend graphs
-![Allure1](./images/alllure_grapths.png)
-![Allure2](./images/allure_report.png)
+![Allure1](src/readme_page_media/images/allure_grapths.png)
+![Allure2](src/readme_page_media/images/allure_report.png)
 
 ### Allure Test Ops: Test result of the launch
 #### There is an example of the failed automated test with attachments.

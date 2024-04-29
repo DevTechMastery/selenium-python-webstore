@@ -20,7 +20,8 @@
 # Pytest cache
 *.pytest_cache/
 
-
+# Allure results
+allure-results/
 
 
 

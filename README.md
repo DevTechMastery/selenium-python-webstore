@@ -44,13 +44,13 @@ The `myStoreWebUI` test automation framework is built using a modern technology 
 <details>
   <summary> <b> :computer: Test Suite ★ User Authentication </b></summary>
 
-:computer: Test Case ID 1 @ User Authentication @ User Registration \
+Test Case ID 1 @ User Registration \
 Objective: Validate the successful registration of a new user account.
 
-:computer: Test Case ID 2 @ User Authentication @ Existing User Login \
+Test Case ID 2 @ Existing User Login \
 Objective: Authenticate an existing user and confirm successful login.
 
-:computer: Test Case ID 3 @ User Authentication @ Non-Existing User Login \
+Test Case ID 3 @ Non-Existing User Login \
 Objective: Attempt to authenticate a non-existing user and verify that the login attempt fails with the appropriate error message.
 
 </details>
@@ -58,7 +58,7 @@ Objective: Attempt to authenticate a non-existing user and verify that the login
 <details>
   <summary><b>:computer: Test Suite ★ Home Page </b></summary>
 
-:computer: Test Case ID 8 @ Home Page @ Search for a Specific Product \
+Test Case ID 8 @ Search for a Specific Product \
 Objective: Execute a product search using the search bar and confirm that the search results are correctly displayed.
 
 </details>
@@ -66,28 +66,28 @@ Objective: Execute a product search using the search bar and confirm that the se
 <details>
   <summary><b> :computer: Test Suite ★ Product Detail Page </b></summary>
 
-:computer: Test Case ID 10 @ Product Detail Page @ Verify Add to cart button is displayed \
+Test Case ID 10 @ Verify Add to cart button is displayed \
 Objective: Validate the correct display of the "Add to Cart" button on the product detail page.
 
-:computer: Test Case ID 11 @ Product Detail Page @ Verify Product Category \
+Test Case ID 11 @ Verify Product Category \
 Objective: Validate the correct display of a product's category on the product detail page.
 
-:computer: Test Case ID 12 @ Product Detail Page @ Verify Product Description \
+Test Case ID 12 @ Verify Product Description \
 Objective: Validate the correct display of a product's description on the product detail page.
 
-:computer: Test Case ID 13 @ Product Detail Page @ Verify Product Description Header \
+Test Case ID 13 @ Verify Product Description Header \
 Objective: Validate the correct display of the product description header on the product detail page.
 
-:computer: Test Case ID 14 @ Product Detail Page @ Verify Product Image \
+Test Case ID 14 @ Verify Product Image \
 Objective: Validate the correct display of a product's image on the product detail page.
 
-:computer: Test Case ID 15 @ Product Detail Page @ Verify Product Price \
+Test Case ID 15 @ Verify Product Price \
 Objective: Validate the correct display of a product's price on the product detail page.
 
-:computer: Test Case ID 16 @ Product Detail Page @ Verify Product Name \
+Test Case ID 16 @ Verify Product Name \
 Objective: Validate the correct display of a product's name on the product detail page.
 
-:computer: Test Case ID 17 @ Product Detail Page @ Verify Product SKU \
+Test Case ID 17 @ Verify Product SKU \
 Objective: Validate the correct display of a product's SKU on the product detail page.
 
 </details>
@@ -95,13 +95,13 @@ Objective: Validate the correct display of a product's SKU on the product detail
 <details >
   <summary><b> :computer: Test Suite ★ Shopping Cart </b></summary>
 
-:computer: Test Case ID 5 @ Shopping Cart Operations @ Remove Product from Cart \
+Test Case ID 5 @ Remove Product from Cart \
 Objective: Add a product to the shopping cart, subsequently remove it, and confirm that the shopping cart is empty.
 
-:computer: Test Case ID 6 @ Shopping Cart Operations @ Update Product Quantity in Cart \
+Test Case ID 6 @ Update Product Quantity in Cart \
 Objective: Adjust the quantity of an existing product in the shopping cart, both increasing and decreasing, and confirm that the shopping cart updates accurately reflecting the correct total price and quantity.
 
-:computer: Test Case ID 7 @ Shopping Cart Operations @ \
+Test Case ID 7 @ Shopping Cart Operations \
 Objective: TBD
 
 </details>
@@ -113,22 +113,22 @@ Objective: TBD
 <details>
   <summary><b> :computer: Test Suite ★ End-to-End Process </b></summary>
 
-:computer: Test Case ID 30 @ End-to-End Process @ Order with Discount Coupon as Guest User \
+Test Case ID 30 @ Order with Discount Coupon as Guest User \
 Objective: Add a product to the shopping cart, apply a discount coupon, and finalize the order as a guest user, ensuring the process completes successfully.
 
-:computer: Test Case ID 31 @ End-to-End Process @ Order with Discount Coupon as Registered User \
+Test Case ID 31 @ Order with Discount Coupon as Registered User \
 Objective: Add a product to the shopping cart, apply a discount coupon, and finalize the order as a registered user, ensuring the process completes successfully.
 
-:computer: Test Case ID 32 @ End-to-End Process @ Order with Multiple Products as Guest User \
+Test Case ID 32 @ Order with Multiple Products as Guest User \
 Objective: Add multiple products to the shopping cart, finalize the order as a guest user, and confirm that the order is processed successfully.
 
-:computer: Test Case ID 33 @ End-to-End Process @ Order with Multiple Products as Registered User \
+Test Case ID 33 @ Order with Multiple Products as Registered User \
 Objective: Add multiple products to the shopping cart, finalize the order as a registered user, and confirm that the order is processed successfully.
 
-:computer: Test Case ID 34 @ End-to-End Process @ Order with Multiple Products and Discount Coupon as Guest User \
+Test Case ID 34 @ Order with Multiple Products and Discount Coupon as Guest User \
 Objective: Add multiple products to the shopping cart, apply a discount coupon, finalize the order as a guest user, and confirm that the order is processed successfully.
 
-:computer: Test Case ID 35 @ End-to-End Process @ Order with Multiple Products and Discount Coupon as Registered User \
+Test Case ID 35 @ Order with Multiple Products and Discount Coupon as Registered User \
 Objective: Add multiple products to the shopping cart, apply a discount coupon, finalize the order as a registered user, and confirm that the order is processed successfully.
 
 </details>
@@ -141,10 +141,10 @@ Objective: Add multiple products to the shopping cart, apply a discount coupon, 
 <details>
     <summary><b> :gear: API Test Suite </b></summary>
 
-:gear: Test Case ID 42 @ API @ Add Product to Cart with API \
+Test Case ID 42 @ Add Product to Cart with API \
 Objective: Utilize the API to add a product to the shopping cart and confirm that the product is added successfully.
 
-:gear: Test Case ID 41 @ API @ Test Case Name \
+Test Case ID 41 @ Test Case Name \
 Objective: Test case objective.
 
 </details>

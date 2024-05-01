@@ -1,4 +1,4 @@
-## 📊 Comprehensive Test Automation Framework for the [Demo Web Store](http://happyharbor.com) Application
+## 📊 Test Automation Framework for the [Demo Web Store](http://happyharbor.com) Application
 
 ![logo.png](src/readme_page_media/logo/Logo.png)
 
@@ -13,7 +13,7 @@ This project utilizes a variety of tools to achieve its automation goals:
 * [Python](https://www.python.org/): The main programming language used for writing the test automation framework and tests.
 * [Pytest](https://docs.pytest.org/en/latest/): A testing framework in Python, used for organizing and running the tests.
 * [Selenium](https://www.selenium.dev/): A tool for automating web browsers, used for writing the UI tests.
-* [Faker](https://faker.readthedocs.io/en/master/) is a Python library for generating fake data such as names, addresses, and phone numbers. It's useful for populating test data in automated tests.
+* [Faker](https://faker.readthedocs.io/en/master/): is a Python library for generating fake data such as names, addresses, and phone numbers. It's useful for populating test data in automated tests.
 * [Jenkins](https://www.jenkins.io/): A continuous integration system used to schedule and run the tests automatically.
 * [Jira](https://www.atlassian.com/software/jira): An issue tracking system used for managing project tasks and bugs.
 * [Allure Report](http://allure.qatools.ru) and [Allure TestOps](https://docs.qameta.io/allure-testops/): Used to visualize test results in a comprehensive and intuitive report.
@@ -39,8 +39,10 @@ Notifications are sent to the team via Slack, and test results are visualized us
 The `myStoreWebUI` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
 
 ## Test Scenarios
-<details open>
-  <summary><b> User Interface (UI) Test Suite  👉 Click to Minimize</b>  👈</summary>
+### User Interface (UI) Test Suite
+***Click to Expand</ib>***  👇  
+<details>
+  <summary> <b> :computer: Test Suite ★ User Authentication </b></summary>
 
 :computer: Test Case ID 1 @ User Authentication @ User Registration \
 Objective: Validate the successful registration of a new user account.
@@ -51,8 +53,47 @@ Objective: Authenticate an existing user and confirm successful login.
 :computer: Test Case ID 3 @ User Authentication @ Non-Existing User Login \
 Objective: Attempt to authenticate a non-existing user and verify that the login attempt fails with the appropriate error message.
 
-:computer: Test Case ID 4 @ Product Search @ Search for a Specific Product \
+</details>
+
+<details>
+  <summary><b>:computer: Test Suite ★ Home Page </b></summary>
+
+:computer: Test Case ID 8 @ Home Page @ Search for a Specific Product \
 Objective: Execute a product search using the search bar and confirm that the search results are correctly displayed.
+
+</details>
+
+<details>
+  <summary><b> :computer: Test Suite ★ Product Detail Page </b></summary>
+
+:computer: Test Case ID 10 @ Product Detail Page @ Verify Add to cart button is displayed \
+Objective: Validate the correct display of the "Add to Cart" button on the product detail page.
+
+:computer: Test Case ID 11 @ Product Detail Page @ Verify Product Category \
+Objective: Validate the correct display of a product's category on the product detail page.
+
+:computer: Test Case ID 12 @ Product Detail Page @ Verify Product Description \
+Objective: Validate the correct display of a product's description on the product detail page.
+
+:computer: Test Case ID 13 @ Product Detail Page @ Verify Product Description Header \
+Objective: Validate the correct display of the product description header on the product detail page.
+
+:computer: Test Case ID 14 @ Product Detail Page @ Verify Product Image \
+Objective: Validate the correct display of a product's image on the product detail page.
+
+:computer: Test Case ID 15 @ Product Detail Page @ Verify Product Price \
+Objective: Validate the correct display of a product's price on the product detail page.
+
+:computer: Test Case ID 16 @ Product Detail Page @ Verify Product Name \
+Objective: Validate the correct display of a product's name on the product detail page.
+
+:computer: Test Case ID 17 @ Product Detail Page @ Verify Product SKU \
+Objective: Validate the correct display of a product's SKU on the product detail page.
+
+</details>
+
+<details >
+  <summary><b> :computer: Test Suite ★ Shopping Cart </b></summary>
 
 :computer: Test Case ID 5 @ Shopping Cart Operations @ Remove Product from Cart \
 Objective: Add a product to the shopping cart, subsequently remove it, and confirm that the shopping cart is empty.
@@ -63,22 +104,47 @@ Objective: Adjust the quantity of an existing product in the shopping cart, both
 :computer: Test Case ID 7 @ Shopping Cart Operations @ \
 Objective: TBD
 
-:computer: Test Case ID 15 @ End-to-End Process @ Order with Discount Coupon as Guest User \
+</details>
+
+<details>
+  <summary><b> :computer: Test Suite ★ User Profile </b></summary>
+</details>
+
+<details>
+  <summary><b> :computer: Test Suite ★ End-to-End Process </b></summary>
+
+:computer: Test Case ID 30 @ End-to-End Process @ Order with Discount Coupon as Guest User \
 Objective: Add a product to the shopping cart, apply a discount coupon, and finalize the order as a guest user, ensuring the process completes successfully.
 
-:computer: Test Case ID 16 @ End-to-End Process @  \
-Objective: TBD
+:computer: Test Case ID 31 @ End-to-End Process @ Order with Discount Coupon as Registered User \
+Objective: Add a product to the shopping cart, apply a discount coupon, and finalize the order as a registered user, ensuring the process completes successfully.
+
+:computer: Test Case ID 32 @ End-to-End Process @ Order with Multiple Products as Guest User \
+Objective: Add multiple products to the shopping cart, finalize the order as a guest user, and confirm that the order is processed successfully.
+
+:computer: Test Case ID 33 @ End-to-End Process @ Order with Multiple Products as Registered User \
+Objective: Add multiple products to the shopping cart, finalize the order as a registered user, and confirm that the order is processed successfully.
+
+:computer: Test Case ID 34 @ End-to-End Process @ Order with Multiple Products and Discount Coupon as Guest User \
+Objective: Add multiple products to the shopping cart, apply a discount coupon, finalize the order as a guest user, and confirm that the order is processed successfully.
+
+:computer: Test Case ID 35 @ End-to-End Process @ Order with Multiple Products and Discount Coupon as Registered User \
+Objective: Add multiple products to the shopping cart, apply a discount coupon, finalize the order as a registered user, and confirm that the order is processed successfully.
 
 </details>
 
 
-<details open>
-  <summary><b> API Test Suite  👉 Click to Minimize</b>  👈</summary>
 
-:gear: Test Case ID 20 @ API @ Add Product to Cart with API \
+
+### API Test Suite
+
+<details>
+    <summary><b> :gear: API Test Suite </b></summary>
+
+:gear: Test Case ID 42 @ API @ Add Product to Cart with API \
 Objective: Utilize the API to add a product to the shopping cart and confirm that the product is added successfully.
 
-:gear: Test Case ID 21 @ API @ Test Case Name \
+:gear: Test Case ID 41 @ API @ Test Case Name \
 Objective: Test case objective.
 
 </details>
@@ -111,6 +177,9 @@ pytest -m api --alluredir=allure-results
 ```
 
 ## Demonstration of a Successful End-to-End Test Case Execution:
+
+This demonstration provides a practical example of how our automated tests validate the entire system, from start to finish, ensuring that all integrated components of the application function as expected.
+
 ![Selenium](src/readme_page_media/video/test_e2e.gif)
 
 ## Jenkins Job: Configuring Launch Options

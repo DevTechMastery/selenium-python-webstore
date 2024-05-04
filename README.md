@@ -38,7 +38,7 @@ The `myStoreWebUI` test automation framework is built using a modern technology 
 
 ## Test Scenarios
 ### :computer: User Interface (UI) Test Suite
-***Click to Expand</ib>***  👇  
+***Click 👇 to Expand</ib>***    
 <details>
   <summary> <b> :gear: Test Suite ★ User Authentication </b></summary>
 

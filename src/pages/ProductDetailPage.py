@@ -42,3 +42,18 @@ class ProductDetailPage(ProductDetailPageLocators):
         main_image = self.sl.wait_and_get_attribute(ProductDetailPageLocators.MAIN_IMAGE, 'src')
         assert  main_image.endswith(expected_main_image), f"Expected image {expected_main_image} not found in {main_image}"
 
+    # Method to verify the price of the product
+    def verify_price(self, expected_price):
+        price = self.sl.wait_and_get_text(ProductDetailPageLocators.PRICE)
+        assert price == expected_price, f"Expected price {expected_price} not found in {price}"
+
+    # Method to verify the product name
+    def verify_product_name(self, expected_name):
+        name = self.sl.wait_and_get_text(ProductDetailPageLocators.NAME)
+        assert name == expected_name, f"Expected name {expected_name} not found in {name}"
+
+    # Method to verify the SKU of the product
+    def verify_sku(self, expected_sku):
+        sku = self.sl.wait_and_get_text(ProductDetailPageLocators.SKU)
+        assert sku == expected_sku, f"Expected SKU {expected_sku} not found in {sku}"
+

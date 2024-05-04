@@ -30,8 +30,6 @@ Each page of the web application is represented by a Python class, and the inter
 
 The project is designed to be flexible and maintainable, with the ability to add new tests and page classes as the web application evolves.
 
-In addition to UI tests, the framework also includes API tests. These tests interact directly with the web application's backend, verifying the correct operation of the API endpoints. This allows for more comprehensive coverage of the application's functionality, as well as faster and more reliable tests compared to UI tests.
-
 Continuous integration is an essential part of the project, with Jenkins used to automate the test execution process. Jenkins is configured to run the tests on a regular schedule, providing feedback on the application's health and stability.
 
 Notifications are sent to the team via Slack, and test results are visualized using Allure reports and Allure TestOps.
@@ -39,10 +37,10 @@ Notifications are sent to the team via Slack, and test results are visualized us
 The `myStoreWebUI` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
 
 ## Test Scenarios
-### User Interface (UI) Test Suite
+### :computer: User Interface (UI) Test Suite
 ***Click to Expand</ib>***  👇  
 <details>
-  <summary> <b> :computer: Test Suite ★ User Authentication </b></summary>
+  <summary> <b> :gear: Test Suite ★ User Authentication </b></summary>
 
 Test Case ID 1 @ User Registration \
 Objective: Validate the successful registration of a new user account.
@@ -56,7 +54,7 @@ Objective: Attempt to authenticate a non-existing user and verify that the login
 </details>
 
 <details>
-  <summary><b>:computer: Test Suite ★ Home Page </b></summary>
+  <summary><b> :gear: Test Suite ★ Home Page </b></summary>
 
 Test Case ID 8 @ Search for a Specific Product \
 Objective: Execute a product search using the search bar and confirm that the search results are correctly displayed.
@@ -64,7 +62,7 @@ Objective: Execute a product search using the search bar and confirm that the se
 </details>
 
 <details>
-  <summary><b> :computer: Test Suite ★ Product Detail Page </b></summary>
+  <summary><b> :gear: Test Suite ★ Product Detail Page </b></summary>
 
 Test Case ID 10 @ Verify Add to cart button is displayed \
 Objective: Validate the correct display of the "Add to Cart" button on the product detail page.
@@ -93,7 +91,7 @@ Objective: Validate the correct display of a product's SKU on the product detail
 </details>
 
 <details >
-  <summary><b> :computer: Test Suite ★ Shopping Cart </b></summary>
+  <summary><b> :gear: Test Suite ★ Shopping Cart </b></summary>
 
 Test Case ID 5 @ Remove Product from Cart \
 Objective: Add a product to the shopping cart, subsequently remove it, and confirm that the shopping cart is empty.
@@ -107,11 +105,11 @@ Objective: TBD
 </details>
 
 <details>
-  <summary><b> :computer: Test Suite ★ User Profile </b></summary>
+  <summary><b> :gear: Test Suite ★ User Profile </b></summary>
 </details>
 
 <details>
-  <summary><b> :computer: Test Suite ★ End-to-End Process </b></summary>
+  <summary><b> :gear: Test Suite ★ End-to-End Process </b></summary>
 
 Test Case ID 30 @ Order with Discount Coupon as Guest User \
 Objective: Add a product to the shopping cart, apply a discount coupon, and finalize the order as a guest user, ensuring the process completes successfully.
@@ -130,22 +128,6 @@ Objective: Add multiple products to the shopping cart, apply a discount coupon, 
 
 Test Case ID 35 @ Order with Multiple Products and Discount Coupon as Registered User \
 Objective: Add multiple products to the shopping cart, apply a discount coupon, finalize the order as a registered user, and confirm that the order is processed successfully.
-
-</details>
-
-
-
-
-### API Test Suite
-
-<details>
-    <summary><b> :gear: API Test Suite </b></summary>
-
-Test Case ID 42 @ Add Product to Cart with API \
-Objective: Utilize the API to add a product to the shopping cart and confirm that the product is added successfully.
-
-Test Case ID 41 @ Test Case Name \
-Objective: Test case objective.
 
 </details>
 
@@ -171,9 +153,7 @@ pytest -m end_to_end
 
 pytest -m smoke
 
-pytest -m regression --alluredir=allure-results
-
-pytest -m api --alluredir=allure-results
+pytest -m regression
 ```
 
 ## Demonstration of a Successful End-to-End Test Case Execution:

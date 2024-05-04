@@ -20,5 +20,5 @@ class TestProductDetailPageVerifyMainImage:
         product_detail.go_to_product_detail_page()
 
         # Verify the main image of the product
-        expected_main_image = 'album-1-1.jpg'
+        expected_main_image = '/album-1-1-416x416.jpg'
         product_detail.verify_main_image(expected_main_image)

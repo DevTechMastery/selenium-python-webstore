@@ -110,6 +110,15 @@ class SeleniumExtended:
 
         return element_text
 
+    # Method to wait for an element to be visible and then return its attribute
+    def wait_and_get_attribute(self, locator, attribute, timeout=None):
+        timeout = timeout if timeout else self.default_timeout
+        element = WebDriverWait(self.driver, timeout).until(
+            EC.visibility_of_element_located(locator)
+        )
+        attribute_value = element.get_attribute(attribute)
+        return attribute_value
+
     # Method to wait until the URL contains a specific substring
     def wait_until_url_contains(self, url_substring, timeout=None):
         timeout = timeout if timeout else self.default_timeout
@@ -139,3 +148,16 @@ class SeleniumExtended:
         else:
             raise Exception(
                 f"Invalid option for 'to_select' parameter. Valid values are 'visible_text', 'index', or value 'value'.")
+
+
+    # Method to check if an element is displayed
+    def is_element_displayed(self, locator, timeout=None):
+        timeout = timeout if timeout else self.default_timeout
+        try:
+            WebDriverWait(self.driver, timeout).until(
+                EC.visibility_of_element_located(locator)
+            )
+            return True
+        except TimeoutException:
+            return False
+

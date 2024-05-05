@@ -21,6 +21,9 @@ class TestRemoveItemFromCart:
         # Add 1 item to cart
         home_p.click_first_add_to_cart_button()
 
+        # Make sure the cart is updated before going to cart
+        header.wait_until_cart_item_count(1)
+
         # Navigate to cart
         header.click_on_cart_on_right_header()
 
@@ -38,6 +41,9 @@ class TestRemoveItemFromCart:
 
         # Verify that the cart is empty
         cart_p.verify_cart_is_empty()
+
+        # debut and stop the test
+        import pdb; pdb.set_trace()
 
 
 

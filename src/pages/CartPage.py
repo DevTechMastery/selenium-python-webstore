@@ -1,17 +1,24 @@
-from myStoreWebUI.src.SeleniumExtended import SeleniumExtended
 from myStoreWebUI.src.pages.locators.CartPageLocators import CartPagesLocators
+from myStoreWebUI.src.SeleniumExtended import SeleniumExtended
+from myStoreWebUI.src.helpers.config_helpers import get_base_url
+import logging as logger
 
 
 class CartPage(CartPagesLocators):
+    # end of cart page
+    endpoint = '/cart/'
+
     # Constructor for the CartPage class
     def __init__(self, driver):
         self.driver = driver
         self.sl = SeleniumExtended(self.driver)
 
     # Method to navigate to the cart page
-    # Currently, this method is not implemented
     def go_to_cart_page(self):
-        pass
+        base_url = get_base_url()
+        cart_page_url = base_url + self.endpoint
+        logger.info(f"Going to: {cart_page_url}")
+        self.driver.get(cart_page_url)
 
     # Method to get all product names in the cart
     def get_all_product_names_in_cart(self):
@@ -56,6 +63,38 @@ class CartPage(CartPagesLocators):
     # Method to click the proceed to checkout button
     def click_proceed_to_checkout_button(self):
         self.sl.wait_and_click(self.PROCEED_TO_CHECKOUT_BUTTON)
+
+    # Method to click the "+" button to add items to the cart
+    def click_plus_button(self, count):
+        for i in range(count):
+            self.sl.wait_and_click(self.PLUS_ITEM_BUTTON)
+
+
+    # Method to click the "-" button to remove items from the cart
+    def click_minus_button(self, count):
+        for i in range(count):
+            self.sl.wait_and_click(self.MINUS_ITEM_BUTTON)
+
+    # Method to verify the number of items in the cart
+    def verify_item_count_in_cart(self, count):
+        # Wait for the cart item element to be present and get it
+        cart_item_elements = self.sl.wait_and_get_elements(self.CART_ITEMS)
+        # Get the value attribute of each cart item element and convert it to an integer
+        actual_counts = [int(element.get_attribute('value')) for element in cart_item_elements]
+        # Assert that the sum of actual counts is equal to the expected count
+        assert sum(actual_counts) == count, f'Expected {count} items in cart. Found {sum(actual_counts)} items.'
+
+    # Method to click the "Remove item" button to remove an item from the cart
+    def click_remove_item_button(self):
+        # Wait for the remove item button to be present and click it
+        self.sl.wait_and_click(self.REMOVE_ITEM_BUTTON)
+
+    # Method to verify that the cart is empty as text is displayed "Your cart is currently empty!"
+    def verify_cart_is_empty(self):
+        # Wait for the empty cart message to be present and get it
+        empty_cart_message = self.sl.wait_and_get_text(self.EMPTY_CART_MESSAGE)
+        # Assert that the empty cart message is displayed
+        assert 'Your cart is currently empty!' in empty_cart_message, f'Expected empty cart message not found. Found: {empty_cart_message}'
 
 
 

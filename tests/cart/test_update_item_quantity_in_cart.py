@@ -2,6 +2,7 @@ import pytest
 from myStoreWebUI.src.pages.HomePage import HomePage
 from myStoreWebUI.src.pages.Header import Header
 from myStoreWebUI.src.pages.CartPage import CartPage
+import time
 
 @pytest.mark.usefixtures('init_driver')
 class TestUpdateItemQuantityInCart:
@@ -21,6 +22,9 @@ class TestUpdateItemQuantityInCart:
         # Add 1 item to cart
         home_p.click_first_add_to_cart_button()
 
+        # Make sure the cart is updated before going to cart
+        header.wait_until_cart_item_count(1)
+
         # Navigate to cart
         header.click_on_cart_on_right_header()
 
@@ -38,6 +42,9 @@ class TestUpdateItemQuantityInCart:
 
         # Click "+" button to add 2 more items to cart
         cart_p.click_plus_button(2)
+
+        # add wait time to allow the cart to update
+        time.sleep(2)
 
         # Verify 5 items in cart
         cart_p.verify_item_count_in_cart(5)

@@ -15,3 +15,5 @@ class CartPagesLocators:
     CART_ITEMS = (By.CSS_SELECTOR, 'input.wc-block-components-quantity-selector__input')
     REMOVE_ITEM_BUTTON = (By.CSS_SELECTOR, 'button.wc-block-cart-item__remove-link')
     EMPTY_CART_MESSAGE = (By.CSS_SELECTOR, 'h2.wc-block-cart__empty-cart__title')
+    TOTAL_PRICE = (By.CSS_SELECTOR, 'span.wc-block-components-totals-item__value')
+    SINGLE_ITEM_PRICE = (By.CSS_SELECTOR, 'span.wc-block-components-product-price__value')

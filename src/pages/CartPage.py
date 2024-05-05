@@ -96,6 +96,20 @@ class CartPage(CartPagesLocators):
         # Assert that the empty cart message is displayed
         assert 'Your cart is currently empty!' in empty_cart_message, f'Expected empty cart message not found. Found: {empty_cart_message}'
 
+    # Method to verify the total price of items in the cart
+    def verify_total_price_of_items_in_cart(self, count):
+        # Get the total price of the items in the cart
+        total_price = self.sl.wait_and_get_text(self.TOTAL_PRICE)
+        # Get the price of a single item
+        single_item_price = self.sl.wait_and_get_text(self.SINGLE_ITEM_PRICE)
+        # Remove the dollar sign and convert the prices to float
+        total_price = float(total_price.replace('$', ''))
+        single_item_price = float(single_item_price.replace('$', ''))
+        # Calculate the expected total price
+        expected_total_price = single_item_price * count
+        # Assert that the total price is correct
+        assert total_price == expected_total_price, f'Expected total price of {expected_total_price}. Found {total_price}'
+
 
 
 

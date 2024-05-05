@@ -42,8 +42,5 @@ class TestRemoveItemFromCart:
         # Verify that the cart is empty
         cart_p.verify_cart_is_empty()
 
-        # debut and stop the test
-        import pdb; pdb.set_trace()
-
 
 

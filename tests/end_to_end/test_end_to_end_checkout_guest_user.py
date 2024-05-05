@@ -13,6 +13,7 @@ class TestEndToEndCheckoutGuestUser:
     # Test case for end-to-end checkout by a guest user
     @pytest.mark.tcid3
     @pytest.mark.end_to_end
+    @pytest.mark.regression
     def test_end_to_end_checkout_guest_user(self):
         # Create instances of HomePage, Header, CartPage, CheckoutPage and OrderReceivedPage
         home_p = HomePage(self.driver)

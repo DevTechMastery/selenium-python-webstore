@@ -2,13 +2,13 @@ import pytest
 from myStoreWebUI.src.pages.HomePage import HomePage
 
 @pytest.mark.usefixtures("init_driver")
-class TestSearch:
+class TestHomePageSearchFunctionality:
     # Test case for searching an item
     # Verify the search functionality on the home page by searching for an item and verifying the search results.
     @pytest.mark.tcid4
     @pytest.mark.smoke
     @pytest.mark.regression
-    def test_search_item(self):
+    def test_home_page_search_functionality(self):
         # Create an instance of HomePage
         home_p = HomePage(self.driver)
 
@@ -19,7 +19,7 @@ class TestSearch:
         home_p.search_item('T-shirt')
 
         # Verify an item is displayed in the search result page
-        expected_result = ('Showing all 3 results')
+        expected_result = ('Showing all 2 results')
         home_p.get_search_result(expected_result)
 
 

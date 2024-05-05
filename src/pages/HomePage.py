@@ -22,7 +22,6 @@ class HomePage(HomePageLocators):
         self.sl.wait_and_input_text(self.SEARCH_FIELD, item)
         self.sl.wait_and_enter(self.SEARCH_FIELD)
 
+    # Method to get the search result
     def get_search_result(self, result,):
         self.sl.wait_until_element_contains_text(self.SEARCH_RESULT, result)
-
-

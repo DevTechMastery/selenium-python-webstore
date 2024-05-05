@@ -8,6 +8,7 @@ class AccountSignedOut(AccountSignedOutLocators):
     # end of web page account
     endpoint = '/my-account/'
 
+    # Constructor for the AccountSignedOut class
     def __init__(self, driver):
         self.driver = driver
         self.sl = SeleniumExtended(self.driver)
@@ -17,7 +18,6 @@ class AccountSignedOut(AccountSignedOutLocators):
         base_url = get_base_url()
         my_account_url = base_url + self.endpoint
         logger.info(f"Going to: {my_account_url}")
-
         self.driver.get(my_account_url)
 
     # Method to input username for login

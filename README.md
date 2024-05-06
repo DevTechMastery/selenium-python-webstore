@@ -196,9 +196,9 @@ allure serve allure-results
 ## Allure Report: Visualizing Test Status and Trends
 Allure Reports not only provide a detailed overview of test status but also display trend graphs for a more comprehensive understanding of the test performance over time.
 
-![Allure1](src/readme_page_media/images/allure_grapths.png)
+![Allure1](src/readme_page_media/images/allure_grapths_1.png)
 
-![Allure2](src/readme_page_media/images/allure_report.png)
+![Allure2](src/readme_page_media/images/allure_report_2.png)
 
 ## Allure TestOps: Analyzing Test Execution Results
 

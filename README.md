@@ -176,7 +176,7 @@ Here are some possible configurations for setting up Jenkins jobs for our projec
 
 4. **Parallel Test Runs**: Jenkins supports running jobs in parallel, which can significantly reduce the total test execution time when you have a large number of tests.
 
-![Jenkins](./images/jenkins.png)
+![Jenkins](src/readme_page_media/images/jenkins.png)
 
 
 ## Allure Reports: Generation and Visualization

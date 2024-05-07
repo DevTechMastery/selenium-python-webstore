@@ -9,12 +9,12 @@ from myStoreWebUI.src.configs.generic_configs import GenericConfigs
 import time
 
 @pytest.mark.usefixtures('init_driver')
-class TestEndToEndCheckoutGuestUser:
-    # Test case for end-to-end checkout by a guest user
-    @pytest.mark.tcid3
+class TestEndToEndCheckoutGuestUserWithDiscount:
+    # Test case for end-to-end checkout by a guest user with discount (free coupon)
+    @pytest.mark.tcid30
     @pytest.mark.end_to_end
     @pytest.mark.regression
-    def test_end_to_end_checkout_guest_user(self):
+    def test_end_to_end_checkout_guest_user_with_discount(self):
         # Create instances of HomePage, Header, CartPage, CheckoutPage and OrderReceivedPage
         home_p = HomePage(self.driver)
         header = Header(self.driver)
@@ -49,13 +49,10 @@ class TestEndToEndCheckoutGuestUser:
         checkout_p.fill_in_billing_details()
 
         # note: the following sleep is added to help with debugging as the page transitions are too fast and issue to click place order button
-        time.sleep(5)
+        time.sleep(2)
 
         # Click on place order button
         checkout_p.click_place_order_button()
 
         # Verify order is received
         order_received_p.verify_order_received_page_loaded()
-
-        #import pdb;
-        #pdb.set_trace()

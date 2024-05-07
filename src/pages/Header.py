@@ -12,6 +12,10 @@ class Header(HeaderLocators):
     def click_on_cart_on_right_header(self):
         self.sl.wait_and_click(self.CART_RIGHT_HEADER)
 
+    # Method to click on the home on the left header
+    def click_on_home_on_left_header(self):
+        self.sl.wait_and_click(self.HOME_LEFT_HEADER)
+
     # Method to wait until the cart item count matches the expected count
     def wait_until_cart_item_count(self, count):
         expected_text = str(count) + ' item'

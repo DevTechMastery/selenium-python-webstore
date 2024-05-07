@@ -1,4 +1,3 @@
-
 from myStoreWebUI.src.pages.locators.AccountSignedInLocators import AccountSignedInLocators
 from myStoreWebUI.src.SeleniumExtended import SeleniumExtended
 

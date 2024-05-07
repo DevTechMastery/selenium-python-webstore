@@ -5,12 +5,12 @@ from myStoreWebUI.src.pages.AccountSignedOut import AccountSignedOut
 @pytest.mark.usefixtures("init_driver")
 class TestLoginNegative:
     # Test case for login with non-existing user
-    @pytest.mark.tcid2
+    @pytest.mark.tcid3
     @pytest.mark.smoke
     @pytest.mark.regression
     def test_login_none_existing_user(self):
         print("*******")
-        print("TEST LOGIN NON EXISTING")
+        print("TEST LOGIN NON EXISTING USER")
         print("*******")
 
         # Create an instance of AccountSignedOut

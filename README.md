@@ -1,25 +1,26 @@
-## 📊 Test Automation Framework for the [Demo Web Store](https://www.happyharbor.kesug.com/) Application
+## 📊 Test Automation Framework for the [Web Store](https://www.happyharbor.kesug.com/) Application
 
 ![logo.png](src/readme_page_media/logo/Logo.png)
 
 
 ## Technology Stack
-| <a href="https://www.python.org/"><img src="src/readme_page_media/logo/Python.png" width="40" height="40"  alt="Python"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="src/readme_page_media/logo/Pytest.png" width="40" height="40"  alt="Pytest"/></a> | <a href="https://www.selenium.dev/"><img src="src/readme_page_media/logo/Selenium.png" width="40" height="40"  alt="selenium"/></a> | <a href="https://www.jenkins.io/"><img src="src/readme_page_media/logo/Jenkins.png" width="40" height="40"  alt="jenkins"/></a> | <a href="https://github.com/"><img src="src/readme_page_media/logo/GitHub.png" width="40" height="40"  alt="GitHub"/></a> | <a href="https://faker.readthedocs.io/en/master/"><img src="src/readme_page_media/logo/Faker.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.atlassian.com/software/jira"><img src="src/readme_page_media/logo/Jira.png" width="40" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="src/readme_page_media/logo/Allure.png" width="40" height="40"  alt="Allure"/></a> |<a href="https://docs.qameta.io/allure-testops//"><img src="src/readme_page_media/logo/AllureTO.png" width="40" height="40"  alt="AllureTestOps"/></a> | <a href="https://slack.com/"><img src="src/readme_page_media/logo/Slack.png" width="40" height="40"  alt="Slack"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="src/readme_page_media/logo/PyCharm.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://www.docker.com/"><img src="src/readme_page_media/logo/Docker.png" width="40" height="40"  alt="Docker"/></a> |
-|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: | :---------: |:----------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:| :---------: | :---------: | :---------: | :---------: |:-----------------------------------------------------------------------------------------------------------------------------:|
-|                                                            Python                                                             |                                       Pytest                                                                                                       | Selenium | Jenkins |                                                              GitHub                                                               |                                                          Faker                                                       | Jira | Allure | Allure TO | Slack | PyCharm |                                                            Docker                                                             |
+| <a href="https://www.python.org/"><img src="src/readme_page_media/logo/Python.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="src/readme_page_media/logo/PyCharm.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="src/readme_page_media/logo/Pytest.png" width="50" height="50"  alt="Pytest"/></a> |    <a href="https://www.selenium.dev/"><img src="src/readme_page_media/logo/Selenium.png" width="40" height="40"  alt="selenium"/></a>     | <a href="https://faker.readthedocs.io/en/master/"><img src="src/readme_page_media/logo/Faker.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.jenkins.io/"><img src="src/readme_page_media/logo/Jenkins.png" width="40" height="50"  alt="Jenkins"/></a> | <a href="https://www.docker.com/"><img src="src/readme_page_media/logo/Docker.png" width="45" height="45"  alt="Docker"/></a> | <a href="https://github.com/"><img src="src/readme_page_media/logo/Github.png" width="45" height="45"  alt="GitHub"/></a> | <a href="https://www.atlassian.com/software/jira"><img src="src/readme_page_media/logo/Jira.png" width="43" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="src/readme_page_media/logo/Allure.png" width="50" height="50"  alt="Allure"/></a> | <a href="https://slack.com/"><img src="src/readme_page_media/logo/Slack.png" width="40" height="40"  alt="Slack"/></a> |
+|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: |:-------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                            Python                                                             |                                                                       PyCharm                                                                        |                                                                        Pytest                                                                        | Selenium |                                                            Faker                                                       |                                                             Jenkins                                                             |                                                            Docker                                                             |                                                          GitHub                                                           |                                                                   Jira                                                                    |                                                             Allure                                                              |                                                                         Slack                                                                         |
 
 This project utilizes a variety of tools to achieve its automation goals:
 
 * [Python](https://www.python.org/): The main programming language used for writing the test automation framework and tests.
+* [PyCharm](https://www.jetbrains.com/pycharm/): An integrated development environment (IDE) used for writing and running the Python code.
 * [Pytest](https://docs.pytest.org/en/latest/): A testing framework in Python, used for organizing and running the tests.
 * [Selenium](https://www.selenium.dev/): A tool for automating web browsers, used for writing the UI tests.
 * [Faker](https://faker.readthedocs.io/en/master/): is a Python library for generating fake data such as names, addresses, and phone numbers. It's useful for populating test data in automated tests.
 * [Jenkins](https://www.jenkins.io/): A continuous integration system used to schedule and run the tests automatically.
+* [Docker](https://www.docker.com/): A platform for developing, shipping, and running applications in containers.
+* [GitHub](https://github.com/): A version control system used for storing the project code and collaborating with team members.
 * [Jira](https://www.atlassian.com/software/jira): An issue tracking system used for managing project tasks and bugs.
-* [Allure Report](http://allure.qatools.ru) and [Allure TestOps](https://docs.qameta.io/allure-testops/): Used to visualize test results in a comprehensive and intuitive report.
-* [Slack](https://slack.com/): A communication platform used for team collaboration and notifications about test results.
-* [TBD](https://slack.com/) TBD
-
+* [Allure Report](http://allure.qatools.ru): Used to visualize test results in a comprehensive and intuitive report.
+* [Slack](https://slack.com/): A communication platform used for team collaboration and notifications about test results. 
 
 ## Overview
 The myStoreWebUI project is a [Python-based](https://www.python.org/) web automation framework designed to interact with an online store's user interface.   
@@ -200,31 +201,6 @@ Allure Reports not only provide a detailed overview of test status but also disp
 
 ![Allure2](src/readme_page_media/images/allure_report_2.png)
 
-## Allure TestOps: Analyzing Test Execution Results
-
-Allure TestOps provides a comprehensive platform for managing and analyzing test results. It offers a detailed view of test execution outcomes, enabling you to identify and address issues effectively.
-
-The image below presents an instance of a failed automated test, complete with relevant attachments. This level of detail aids in diagnosing the cause of test failures and expedites the debugging process.
-
-![TestOps](./images/failed_test.png)
-
-## Allure TestOps: Insightful Test Analytics Dashboard
-
-Allure TestOps offers a comprehensive dashboard that provides a high-level overview of test execution results. This dashboard is instrumental in monitoring the overall health and progress of your testing efforts.
-
-The image below showcases the Allure TestOps dashboard, which presents a visual summary of test outcomes, enabling quick identification of trends and potential issues.
-
-![Dashboard1](./images/Overview.png)
-
-## Allure TestOps: Detailed Analytics on Success and Duration Rates
-
-Allure TestOps provides in-depth analytics that offer insights into the success and duration rates of your tests. These metrics are crucial for understanding the efficiency and reliability of your testing processes.
-
-The image below illustrates the Allure TestOps analytics dashboard, displaying the success rate and duration rate of various tests. This data visualization aids in identifying patterns, trends, and potential areas of improvement in your testing strategy.
-
-![Dashboard2](./images/Automatio-types.png)
-
-
 ## Jira Integration: Attaching Test Results and Test Launch Details to Jira Tickets
 
 Our testing framework is integrated with Jira, a widely-used issue tracking system. This integration allows us to attach test results and details of test launches directly to the corresponding Jira tickets. This feature enhances traceability and provides a comprehensive view of the testing process within the context of each issue.
@@ -232,7 +208,6 @@ Our testing framework is integrated with Jira, a widely-used issue tracking syst
 The image below demonstrates a Jira ticket with attached test results and test launch details.
 
 ![Jira](./images/jira-ticket.png)
-
 
 ## Slack: Real-Time Test Execution Notifications
 

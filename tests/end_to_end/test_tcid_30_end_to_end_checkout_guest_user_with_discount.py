@@ -45,10 +45,11 @@ class TestEndToEndCheckoutGuestUserWithDiscount:
         # Click on checkout
         cart_p.click_proceed_to_checkout_button()
 
-        # Fill in form
+        # Fill in form details for guest user
         checkout_p.fill_in_billing_details()
 
         # note: the following sleep is added to help with debugging as the page transitions are too fast and issue to click place order button
+        # Fill in requires time to load the page before clicking on the place order button
         time.sleep(2)
 
         # Click on place order button

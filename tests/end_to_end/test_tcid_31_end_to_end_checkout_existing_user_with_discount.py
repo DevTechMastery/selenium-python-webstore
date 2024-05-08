@@ -57,11 +57,9 @@ class TestEndToEndCheckoutExistingUserWithDiscount:
         # Click on checkout
         cart_p.click_proceed_to_checkout_button()
 
-        # Fill in form
-        checkout_p.fill_in_billing_details_existing_user()
-
-        # note: the following sleep is added to help with debugging as the page transitions are too fast and issue to click place order button
-        time.sleep(2)
+        # Fill in form details for existing user
+        # Note: No need to input info for existing user as it is already filled in the form by default in the checkout page
+        #checkout_p.fill_in_billing_details_existing_user()
 
         # Click on place order button
         checkout_p.click_place_order_button()

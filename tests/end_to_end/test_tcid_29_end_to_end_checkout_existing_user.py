@@ -1,0 +1,57 @@
+import pytest
+from myStoreWebUI.src.pages.AccountSignedOut import AccountSignedOut
+from myStoreWebUI.src.pages.HomePage import HomePage
+from myStoreWebUI.src.pages.Header import Header
+from myStoreWebUI.src.pages.CartPage import CartPage
+from myStoreWebUI.src.pages.CheckoutPage import CheckoutPage
+from myStoreWebUI.src.pages.OrderReceivedPage import OrderReceivedPage
+
+@pytest.mark.usefixtures('init_driver')
+class TestEndToEndCheckoutExistingUser:
+# Test case for end-to-end checkout by a registered user
+    @pytest.mark.tcid29
+    @pytest.mark.end_to_end
+    @pytest.mark.regression
+    def test_end_to_end_checkout_existing_user(self):
+        # Create instances of AccountSignedOut, HomePage, Header, CartPage, CheckoutPage and OrderReceivedPage
+        my_account_o = AccountSignedOut(self.driver)
+        home_p = HomePage(self.driver)
+        header = Header(self.driver)
+        cart_p = CartPage(self.driver)
+        checkout_p = CheckoutPage(self.driver)
+        order_received_p = OrderReceivedPage(self.driver)
+
+        # Navigate to the account page
+        my_account_o.go_to_my_account()
+
+        # Input username and password for login
+        my_account_o.input_login_username('user101@gmail.com')
+        my_account_o.input_login_password('1234abc111@')
+
+        # Click the login button
+        my_account_o.click_login_button()
+
+        # Click on the home page
+        header.click_on_home_on_left_header()
+
+        # Add 1 item to cart
+        home_p.click_first_add_to_cart_button()
+
+        # Make sure the cart is updated before going to cart
+        header.wait_until_cart_item_count(1)
+
+        # Navigate to cart
+        header.click_on_cart_on_right_header()
+
+        # Click on checkout
+        cart_p.click_proceed_to_checkout_button()
+
+        # Fill in form details for existing user
+        # Note: No need to input info for existing user as it is already filled in the form by default in the checkout page
+        # checkout_p.fill_in_billing_details_existing_user()
+
+        # Click on place order button
+        checkout_p.click_place_order_button()
+
+        # Verify order is received
+        order_received_p.verify_order_received_page_loaded()

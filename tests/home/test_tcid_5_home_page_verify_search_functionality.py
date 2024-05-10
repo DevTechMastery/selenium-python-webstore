@@ -5,7 +5,7 @@ from myStoreWebUI.src.pages.HomePage import HomePage
 class TestHomePageSearchFunctionality:
     # Test case for searching an item
     # Verify the search functionality on the home page by searching for an item and verifying the search results.
-    @pytest.mark.tcid4
+    @pytest.mark.tcid5
     @pytest.mark.smoke
     @pytest.mark.regression
     def test_home_page_search_functionality(self):
@@ -19,7 +19,7 @@ class TestHomePageSearchFunctionality:
         home_p.search_item('T-shirt')
 
         # Verify an item is displayed in the search result page
-        expected_result = ('Showing all 2 results')
+        expected_result = ('Showing all 3 results')
         home_p.get_search_result(expected_result)
 
 

@@ -6,7 +6,6 @@ class TestHomePageSearchFunctionality:
     # Test case for searching an item
     # Verify the search functionality on the home page by searching for an item and verifying the search results.
     @pytest.mark.tcid5
-    @pytest.mark.smoke
     @pytest.mark.regression
     def test_home_page_search_functionality(self):
         # Create an instance of HomePage

@@ -1,16 +1,15 @@
 import pytest
 from myStoreWebUI.src.pages.ProductDetailPage import ProductDetailPage
 
-
 @pytest.mark.usefixtures("init_driver")
-class TestProductDetailPageVerifyAddToCartBtnDisplayed:
-    # Test case for verifying the Add to Cart button is displayed
-    @pytest.mark.tcid10
-    @pytest.mark.smoke
+class TestProductDetailPageVerifyMainImage:
+    # Test case for verifying the main image of a product
+    @pytest.mark.tcid17
+    @pytest.mark.product_page
     @pytest.mark.regression
-    def test_verify_add_to_cart_btn_displayed(self):
+    def test_verify_main_image(self):
         print("*******")
-        print("TEST VERIFY ADD TO CART BUTTON DISPLAYED")
+        print("TEST VERIFY MAIN IMAGE")
         print("*******")
 
         # Create an instance of ProductDetailPage
@@ -19,5 +18,6 @@ class TestProductDetailPageVerifyAddToCartBtnDisplayed:
         # Navigate to the product detail page
         product_detail.go_to_product_detail_page()
 
-        # Verify the Add to Cart button is displayed
-        product_detail.verify_add_to_cart_btn_displayed()
+        # Verify the main image of the product
+        expected_main_image = '/album-1-1-416x416.jpg'
+        product_detail.verify_main_image(expected_main_image)

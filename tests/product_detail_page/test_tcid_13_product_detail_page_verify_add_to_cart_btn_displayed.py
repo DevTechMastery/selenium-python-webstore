@@ -1,16 +1,15 @@
 import pytest
 from myStoreWebUI.src.pages.ProductDetailPage import ProductDetailPage
 
-
 @pytest.mark.usefixtures("init_driver")
-class TestProductDetailPageVerifyDescriptionHeader:
-    # Test case for verifying the description header of a product
+class TestProductDetailPageVerifyAddToCartBtnDisplayed:
+    # Test case for verifying the Add to Cart button is displayed
     @pytest.mark.tcid13
-    @pytest.mark.smoke
+    @pytest.mark.product_page
     @pytest.mark.regression
-    def test_verify_description_header(self):
+    def test_verify_add_to_cart_btn_displayed(self):
         print("*******")
-        print("TEST VERIFY DESCRIPTION HEADER")
+        print("TEST VERIFY ADD TO CART BUTTON DISPLAYED")
         print("*******")
 
         # Create an instance of ProductDetailPage
@@ -19,6 +18,5 @@ class TestProductDetailPageVerifyDescriptionHeader:
         # Navigate to the product detail page
         product_detail.go_to_product_detail_page()
 
-        # Verify the product description header
-        expected_desc_header = 'Description'
-        product_detail.verify_product_description_header(expected_desc_header)
+        # Verify the Add to Cart button is displayed
+        product_detail.verify_add_to_cart_btn_displayed()

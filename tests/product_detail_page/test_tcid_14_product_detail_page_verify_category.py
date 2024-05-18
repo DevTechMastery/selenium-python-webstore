@@ -1,12 +1,11 @@
 import pytest
 from myStoreWebUI.src.pages.ProductDetailPage import ProductDetailPage
 
-
 @pytest.mark.usefixtures("init_driver")
 class TestProductDetailPageVerifyCategory:
     # Test case to verify the category of the product
-    @pytest.mark.tcid11
-    @pytest.mark.smoke
+    @pytest.mark.tcid14
+    @pytest.mark.product_page
     @pytest.mark.regression
     def test_verify_category(self):
         print("*******")

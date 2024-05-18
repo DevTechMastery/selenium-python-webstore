@@ -6,7 +6,7 @@ from myStoreWebUI.src.pages.AccountSignedIn import AccountSignedIn
 class TestLoginExistingUser:
     # Test case for login with existing user
     @pytest.mark.tcid2
-    @pytest.mark.smoke
+    @pytest.mark.my_account
     @pytest.mark.regression
     def test_login_existing_user(self):
         print("*******")

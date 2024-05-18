@@ -3,12 +3,11 @@ from myStoreWebUI.src.pages.AccountSignedOut import AccountSignedOut
 from myStoreWebUI.src.pages.AccountSignedIn import AccountSignedIn
 from myStoreWebUI.src.helpers.generic_helpers import generate_random_email_and_password
 
-
 @pytest.mark.usefixtures("init_driver")
 class TestRegisterNewUser:
     # Test case for registering a new user
     @pytest.mark.tcid1
-    @pytest.mark.smoke
+    @pytest.mark.my_account
     @pytest.mark.regression
     def test_register_valid_new_user(self):
         # Create instances of AccountSignedOut and AccountSignedIn

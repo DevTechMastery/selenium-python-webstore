@@ -13,7 +13,7 @@ class TestLoginExistingUser:
         print("TEST LOGIN WITH EXISTING USER")
         print("*******")
 
-        # Create an instance of AccountSignedOut
+        # Create an instance of AccountSignedOut and AccountSignedIn
         my_account_o = AccountSignedOut(self.driver)
         my_account_i = AccountSignedIn(self.driver)
 
@@ -29,4 +29,3 @@ class TestLoginExistingUser:
 
         # Verify the user is signed in
         my_account_i.verify_user_is_signed_in()
-

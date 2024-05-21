@@ -10,6 +10,10 @@ class TestRegisterNewUser:
     @pytest.mark.my_account
     @pytest.mark.regression
     def test_register_valid_new_user(self):
+        print("*******")
+        print("TEST LOGIN WITH NEW USER")
+        print("*******")
+
         # Create instances of AccountSignedOut and AccountSignedIn
         my_account_o = AccountSignedOut(self.driver)
         my_account_i = AccountSignedIn(self.driver)
@@ -29,4 +33,3 @@ class TestRegisterNewUser:
 
         # Verify that the user is registered and signed in
         my_account_i.verify_user_is_signed_in()
-

@@ -28,6 +28,3 @@ class TestLoginUsernameFieldIsEmpty:
         # Verify the error message for incorrect password
         expected_err = "Username is required."
         my_account.wait_until_error_is_displayed(expected_err)
-
-
-

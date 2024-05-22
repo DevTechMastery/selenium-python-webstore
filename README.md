@@ -1,10 +1,10 @@
 ## 📊 Test Automation Framework for the [Web Store](https://www.happyharbor.kesug.com/) Application
 
-![logo.png](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_logo_pages.png)
+![logo.png](https://i.imgur.com/iFtbiey.png)
 
 
 ## Technology Stack
-| <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_python.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_pycharm.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_pytest.png" width="50" height="50"  alt="Pytest"/></a> |    <a href="https://www.selenium.dev/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_selenium.png" width="40" height="40"  alt="selenium"/></a>     | <a href="https://faker.readthedocs.io/en/master/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_faker.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.jenkins.io/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_jenkins.png" width="40" height="50"  alt="Jenkins"/></a> | <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_docker_.png" width="45" height="45"  alt="Docker"/></a> | <a href="https://github.com/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_github.png" width="45" height="45"  alt="GitHub"/></a> | <a href="https://www.atlassian.com/software/jira"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_jira.png" width="43" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_allure.png" width="50" height="50"  alt="Allure"/></a> | <a href="https://slack.com/"><img src="https://raw.githubusercontent.com/DevTechMastery/images/main/icons/icon_slack.png" width="40" height="40"  alt="Slack"/></a> |
+| <a href="https://www.python.org/"><img src="https://i.imgur.com/l1T2VxE.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="https://i.imgur.com/1rUVnJE.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="https://i.imgur.com/eYAwneW.png" width="50" height="50"  alt="Pytest"/></a> |    <a href="https://www.selenium.dev/"><img src="https://i.imgur.com/m2aJGD9.png" width="40" height="40"  alt="selenium"/></a>     | <a href="https://faker.readthedocs.io/en/master/"><img src="https://i.imgur.com/027GEyk.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.jenkins.io/"><img src="https://i.imgur.com/PYwxlPc.png" width="40" height="50"  alt="Jenkins"/></a> | <a href="https://www.docker.com/"><img src="https://i.imgur.com/oBfzO4R.png" width="45" height="45"  alt="Docker"/></a> | <a href="https://github.com/"><img src="https://i.imgur.com/YMRfX5L.png" width="45" height="45"  alt="GitHub"/></a> | <a href="https://www.atlassian.com/software/jira"><img src="https://i.imgur.com/w5Vu4VS.png" width="43" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="https://i.imgur.com/AFfE03h.png" width="50" height="50"  alt="Allure"/></a> | <a href="https://slack.com/"><img src="https://i.imgur.com/NCfR0lb.png" width="40" height="40"  alt="Slack"/></a> |
 |:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: |:-------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                                                            Python                                                             |                                                                       PyCharm                                                                        |                                                                        Pytest                                                                        | Selenium |                                                            Faker                                                       |                                                             Jenkins                                                             |                                                             Docker                                                             |                                                          GitHub                                                           |                                                                   Jira                                                                    |                                                             Allure                                                              |                                                                         Slack                                                                         |
 
@@ -193,7 +193,7 @@ pytest -m regression
 
 This demonstration provides a practical example of how our automated tests validate the entire system, from start to finish, ensuring that all integrated components of the application function as expected.
 
-![Selenium](https://raw.githubusercontent.com/DevTechMastery/images/main/gif/demo_store_selenium_python_test_e2e.gif)
+![Selenium](https://i.imgur.com/x0PbudD.gifv)
 
 ## Jenkins Job: Configuring Launch Options
 
@@ -209,7 +209,7 @@ Here are some possible configurations for setting up Jenkins jobs for our projec
 
 4. **Parallel Test Runs**: Jenkins supports running jobs in parallel, which can significantly reduce the total test execution time when you have a large number of tests.
 
-![Jenkins](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_selenium_python_jenkins.png)
+![Jenkins](https://i.imgur.com/yHKqenF.png)
 
 
 ## Allure Reports: Generation and Visualization
@@ -229,9 +229,9 @@ allure serve allure-results
 ## Allure Report: Visualizing Test Status and Trends
 Allure Reports not only provide a detailed overview of test status but also display trend graphs for a more comprehensive understanding of the test performance over time.
 
-![Allure1](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_selenium_python_allure_report.png)
+![Allure1](https://i.imgur.com/D2TI1Ut.png)
 
-![Allure2](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_selenium_python_allure_grapths.png)
+![Allure2](https://i.imgur.com/TvvcOCR.png)
 
 ## Jira Integration: Attaching Test Results and Test Launch Details to Jira Tickets
 
@@ -239,7 +239,7 @@ Our testing framework is integrated with Jira, a widely-used issue tracking syst
 
 The image below demonstrates a Jira ticket with attached test results and test launch details.
 
-![Jira](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_selenium_python_jira.png)
+![Jira](https://i.imgur.com/xxxxxxx.png)
 
 ## Slack: Real-Time Test Execution Notifications
 
@@ -247,4 +247,4 @@ Slack, as a real-time communication platform, plays a pivotal role in our test a
 
 The image below illustrates a typical Slack notification generated by our testing framework.
 
-![Slack](https://raw.githubusercontent.com/DevTechMastery/images/main/screenshots/demo_store_selenium_python_slack.png)
+![Slack](https://i.imgur.com/fvr34Di.png)

@@ -1,12 +1,27 @@
+# webdriver_setup.py
+# Configuration and setup file for initializing Selenium WebDriver instances in pytest.
+
 import pytest
 from selenium import webdriver
 import os
 
-
-# Define a pytest fixture that initializes a WebDriver instance
-# This fixture has a scope of 'class', meaning it's invoked once per test class
 @pytest.fixture(scope="class")
 def init_driver(request):
+    """
+        Pytest fixture for initializing Selenium WebDriver.
+
+        This fixture supports multiple browsers and manages the lifecycle of the WebDriver instances.
+        It reads the 'BROWSER' environment variable to determine which browser to use for testing.
+        If the variable is not set or an unsupported browser is specified, it raises an exception.
+
+        The WebDriver instance is assigned to the 'driver' attribute of the pytest class,
+        ensuring it is accessible throughout the tests in that class.
+        The fixture has a 'class' scope, which means the WebDriver is initialized once per test class
+        and is terminated after all tests in the class have completed.
+
+        Supported browsers: Chrome, Chrome (headless), Firefox, Firefox (headless).
+        """
+
     # List of supported browsers
     supported_browsers = ['chrome', 'ch', 'headlesschrome', 'firefox', 'ff', 'headlessfirefox']
 

@@ -1,6 +1,6 @@
 ## 📊 Test Automation Framework for the [Web Store](https://www.happyharbor.kesug.com/) Application
 
-![logo.png](https://i.imgur.com/iFtbiey.png)
+![logo.png](https://i.imgur.com/YKWONJp.png)
 
 
 ## Technology Stack
@@ -37,6 +37,40 @@ Continuous integration is an essential part of the project, with Jenkins used to
 Notifications are sent to the team via Slack, and test results are visualized using Allure reports.
 
 The `myStoreWebUI` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
+
+## Repository Structure
+The project structure is organized as follows:
+```bash
+myStoreWebUI/
+├── src/
+│   ├── pages/                      # Contains page objects
+│   │   ├── home_page.py            # Page object for the home page
+│   │   ├── my_account_page.py      # Page object for the my account page
+│   │   ├── cart_page.py            # Page object for the cart page
+│   │   ├── ...                     # Other page objects
+│   │   └── locators/               # Contains locator classes
+│   │       ├── AccountSignedIn.py  # Locator class for the account signed in page
+│   │       ├── AccountSignedOut.py # Locator class for the account signed out page
+│   │       ├── Cart.py             # Locator class for the cart page
+│   │       └── ...                 # Other locator classes
+│   ├── configs/                    # Contains configuration files
+│   ├── helpers/                    # Contains helper scripts
+│   └── seleniumextend.py           # Selenium extension file
+├── tests/                          # Contains test cases
+│   ├── home_page_tests/            # Test cases for the home page
+│   ├── my_account_page_tests/      # Test cases for the my account page
+│   ├── cart_page_tests/            # Test cases for the cart page
+│   ├── checkout_page_tests/        # Test cases for the checkout page
+│   ├── product_detail_page_tests/  # Test cases for the product detail page
+│   └── ...                         # Other test cases
+├── .gitignore                      # Specifies files and directories ignored by Git
+├── conftest.py                     # Configuration file for pytest and fixtures setup
+├── pytest.ini                      # Configuration file for pytest
+├── requirements.txt                # Dependencies for the project
+├── README.md                       # Documentation for the project
+└── ...                             # Other project files
+
+```
 
 ## Test Scenarios
 ### :computer: User Interface (UI) Test Suite
@@ -193,7 +227,7 @@ pytest -m regression
 
 This demonstration provides a practical example of how our automated tests validate the entire system, from start to finish, ensuring that all integrated components of the application function as expected.
 
-![Selenium](https://i.imgur.com/x0PbudD.gifv)
+![Selenium](https://i.imgur.com/x0PbudD.gif)
 
 ## Jenkins Job: Configuring Launch Options
 

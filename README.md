@@ -4,9 +4,9 @@
 
 
 ## Technology Stack
-| <a href="https://www.python.org/"><img src="https://i.imgur.com/l1T2VxE.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="https://i.imgur.com/1rUVnJE.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="https://i.imgur.com/eYAwneW.png" width="50" height="50"  alt="Pytest"/></a> |    <a href="https://www.selenium.dev/"><img src="https://i.imgur.com/m2aJGD9.png" width="40" height="40"  alt="selenium"/></a>     | <a href="https://faker.readthedocs.io/en/master/"><img src="https://i.imgur.com/027GEyk.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.jenkins.io/"><img src="https://i.imgur.com/PYwxlPc.png" width="40" height="50"  alt="Jenkins"/></a> | <a href="https://www.docker.com/"><img src="https://i.imgur.com/oBfzO4R.png" width="45" height="45"  alt="Docker"/></a> | <a href="https://github.com/"><img src="https://i.imgur.com/YMRfX5L.png" width="45" height="45"  alt="GitHub"/></a> | <a href="https://www.atlassian.com/software/jira"><img src="https://i.imgur.com/w5Vu4VS.png" width="43" height="40"  alt="Jira"/></a> | <a href="https://allurereport.org/"><img src="https://i.imgur.com/AFfE03h.png" width="50" height="50"  alt="Allure"/></a> | <a href="https://slack.com/"><img src="https://i.imgur.com/NCfR0lb.png" width="40" height="40"  alt="Slack"/></a> |
-|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: |:-------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                                            Python                                                             |                                                                       PyCharm                                                                        |                                                                        Pytest                                                                        | Selenium |                                                            Faker                                                       |                                                             Jenkins                                                             |                                                             Docker                                                             |                                                          GitHub                                                           |                                                                   Jira                                                                    |                                                             Allure                                                              |                                                                         Slack                                                                         |
+| <a href="https://www.python.org/"><img src="https://i.imgur.com/l1T2VxE.png" width="40" height="40"  alt="Python"/></a> | <a href="https://www.jetbrains.com/pycharm/"><img src="https://i.imgur.com/1rUVnJE.png" width="40" height="40"  alt="PyCharm"/></a> | <a href="https://docs.pytest.org/en/8.0.x/contents.html"><img src="https://i.imgur.com/eYAwneW.png" width="50" height="50"  alt="Pytest"/></a> |    <a href="https://www.selenium.dev/"><img src="https://i.imgur.com/m2aJGD9.png" width="40" height="40"  alt="selenium"/></a>     | <a href="https://faker.readthedocs.io/en/master/"><img src="https://i.imgur.com/027GEyk.png" width="40" height="40"  alt="Faker"/></a> | <a href="https://www.jenkins.io/"><img src="https://i.imgur.com/PYwxlPc.png" width="40" height="50"  alt="Jenkins"/></a> | <a href="https://www.docker.com/"><img src="https://i.imgur.com/oBfzO4R.png" width="45" height="45"  alt="Docker"/></a> |                                                                     <a href="https://github.com/"><img src="https://i.imgur.com/YMRfX5L.png" width="45" height="45"  alt="GitHub"/></a>                                                                     | <a href="https://allurereport.org/"><img src="https://i.imgur.com/AFfE03h.png" width="50" height="50"  alt="Allure"/></a> | <a href="https://slack.com/"><img src="https://i.imgur.com/NCfR0lb.png" width="40" height="40"  alt="Slack"/></a> |
+|:-----------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:| :---------: |:-------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------:|
+|                                                            Python                                                             |                                                                       PyCharm                                                                        |                                                                        Pytest                                                                        | Selenium |                                                            Faker                                                       |                                                             Jenkins                                                             |                                                             Docker                                                             |                                                                                              GitHub                                                                                                                                                         |                                                          Allure                                                           |                                                                         Slack                                                                         |
 
 This project utilizes a variety of tools to achieve its automation goals:
 
@@ -18,7 +18,6 @@ This project utilizes a variety of tools to achieve its automation goals:
 * [Jenkins](https://www.jenkins.io/): A continuous integration system used to schedule and run the tests automatically.
 * [Docker](https://www.docker.com/): A platform for developing, shipping, and running applications in containers.
 * [GitHub](https://github.com/): A version control system used for storing the project code and collaborating with team members.
-* [Jira](https://www.atlassian.com/software/jira): An issue tracking system used for managing project tasks and bugs.
 * [Allure Report](http://allure.qatools.ru): Used to visualize test results in a comprehensive and intuitive report.
 * [Slack](https://slack.com/): A communication platform used for team collaboration and notifications about test results. 
 
@@ -36,7 +35,7 @@ Continuous integration is an essential part of the project, with Jenkins used to
 
 Notifications are sent to the team via Slack, and test results are visualized using Allure reports.
 
-The `myStoreWebUI` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
+The `webstore` test automation framework is built using a modern technology stack that includes Python, Selenium WebDriver, pytest, and Jenkins among others. This combination of technologies allows for robust, scalable, and maintainable automated testing of the web application's user interface.
 
 ## Repository Structure
 The project structure is organized as follows:
@@ -214,13 +213,15 @@ pip install -r requirements.txt
 ## To run the tests locally (default):
 
 ```
-pytest -m tcid1
+pytest -m tcid1                                       # Run a specific test case
 
-pytest -m end_to_end
+pytest -m "tcid1 or tcid2 or tcid3"                   # Run multiple test cases
 
-pytest -m smoke
+pytest -m "my_account or home_page or cart_page"      # Run test cases that belong to multiple test suites
 
-pytest -m regression
+pytest -m end_to_end                                  # Run all end-to-end test cases
+
+pytest -m regression                                  # Run all regression test cases
 ```
 
 ## Demonstration of a Successful End-to-End Test Case Execution:
@@ -266,14 +267,6 @@ Allure Reports not only provide a detailed overview of test status but also disp
 ![Allure1](https://i.imgur.com/D2TI1Ut.png)
 
 ![Allure2](https://i.imgur.com/TvvcOCR.png)
-
-## Jira Integration: Attaching Test Results and Test Launch Details to Jira Tickets
-
-Our testing framework is integrated with Jira, a widely-used issue tracking system. This integration allows us to attach test results and details of test launches directly to the corresponding Jira tickets. This feature enhances traceability and provides a comprehensive view of the testing process within the context of each issue.
-
-The image below demonstrates a Jira ticket with attached test results and test launch details.
-
-![Jira](https://i.imgur.com/xxxxxxx.png)
 
 ## Slack: Real-Time Test Execution Notifications
 
